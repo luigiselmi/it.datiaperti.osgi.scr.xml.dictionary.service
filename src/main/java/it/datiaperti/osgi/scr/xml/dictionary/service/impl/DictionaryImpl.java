@@ -12,21 +12,26 @@ public class DictionaryImpl implements DictionaryService {
 
 		word = word.toLowerCase();
 		
-for (int i = 0; i < this.m_dictionary.length; i++)
-{
-if (this.m_dictionary[i].equals(word))
-{
-return true;
-}
-}
-return false;
-}
+		for (int i = 0; i < this.m_dictionary.length; i++) {
 
-protected void activate(ComponentContext context) {
-System.out.println("Dictionary Service Activated");
-}
+			if (this.m_dictionary[i].equals(word)) {
+				
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	protected void activate(ComponentContext context) {
+
+		System.out.println("Dictionary Service Activated");
+	}
  
-protected void deactivate(ComponentContext context) {
-System.out.println("Dictionary Service Deactivated");
-}
+
+	protected void deactivate(ComponentContext context) {
+
+		System.out.println("Dictionary Service Deactivated");
+
+	}
 }
