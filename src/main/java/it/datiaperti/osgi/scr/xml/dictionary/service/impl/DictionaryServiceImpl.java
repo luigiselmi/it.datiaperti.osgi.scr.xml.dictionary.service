@@ -4,7 +4,7 @@ import it.datiaperti.osgi.scr.xml.dictionary.service.api.DictionaryService;
 import java.io.PrintStream;
 import org.osgi.service.component.ComponentContext;
  
-public class DictionaryImpl implements DictionaryService {
+public class DictionaryServiceImpl implements DictionaryService {
 
 	String[] m_dictionary = { "welcome", "to", "the", "osgi", "tutorial" };
  
