@@ -13,5 +13,6 @@ the client pass the guess word to the service. If the word is one of those known
 and then activeted again.
 
 This service component uses Apache Service Component Runtime to configure the wiring between it and other components (clients).
+The wiring between a service component and a client component is implemeted following the Dependency Injection pattern (constructor injection). 
 The service name and properties is declared in a XML descriptor file whose location must be set in the pom file as Service-Component element value.
 
