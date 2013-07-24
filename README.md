@@ -1,4 +1,4 @@
-it.datiaperti.osgi.scr.xml.dictionary.service
+OSGi SCR Dictionary Service
 =============================================
 This is an example implemetation of a OSGi bundle that provides a service. 
 To try it you have to clone the project, compile with
@@ -14,5 +14,6 @@ and then activeted again.
 
 This service component uses Apache Service Component Runtime to configure the wiring between it and other components (clients).
 The wiring between a service component and a client component is implemeted following the Dependency Injection pattern (constructor injection). 
-The service name and properties is declared in a XML descriptor file whose location must be set in the pom file as Service-Component element value.
+The service name, interface and properties are declared in a XML descriptor file whose location must be set in the pom file 
+as Service-Component element value.
 
