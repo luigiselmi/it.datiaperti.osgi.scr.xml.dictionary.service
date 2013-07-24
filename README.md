@@ -11,3 +11,7 @@ the user and the service. The user sends the guess word to the client writing on
 the client pass the guess word to the service. If the word is one of those known by the service it will send back a response message 
 "Correct" otherwise it sends "Incorrect". A blank line stops the client in passing words. To restore the client it must be deactiveted
 and then activeted again.
+
+This service component uses Apache Service Component Runtime to configure the wiring between it and other components (clients).
+The service name and properties is declared in a XML descriptor file whose location must be set in the pom file as Service-Component element value.
+
